@@ -1,0 +1,41 @@
+/* Define a "universal selector" style with the * character */
+* {
+    font-family: monospace;
+    border: 3px solid black;
+
+}
+
+body {
+    font-size: 22px;
+    /*border is not inherited by every element within the body*/
+    /*border: 3px solid black;*/
+}
+
+h1, h2 {
+    color: blue;
+}
+
+/*Define a .gray class.  Can re-use class on multiple elements.  Overrides other CSS inheritance.  Also overrides the p defnitions below it because it has more specificity.*/
+.gray {
+    color: gray;
+}
+
+p {
+    color: purple;
+}
+
+/* "Cascading" means that the style sheet works like a waterfall, from the top down.  When we repeat the p selector, the bottom-most definition is what will be implemented.*/
+p {
+    color: red;
+}
+
+.highlight {
+    background-color: gold;
+    text-transform: uppercase;
+}
+
+/* Define an ID Selector, second.  ID is specific to ONE specific element. */
+#third {
+    font-style: italic;
+
+}
