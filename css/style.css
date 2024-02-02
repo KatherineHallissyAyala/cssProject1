@@ -1,7 +1,16 @@
 /* Define a "universal selector" style with the * character */
+/* Each element will take on the styles defined in the universal selector.*/
+/* Keeps our code DRY: Don't Repeat Yourself*/
 * {
     font-family: monospace;
-    border: 3px solid black;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+/*Inheritance applies to the HTML selector as well.  Can put font style there.*/
+html {
 
 }
 
@@ -20,8 +29,11 @@ h1, h2 {
     color: gray;
 }
 
+/* The !importnat flag will make the style override everything!  Don't use it too often - better to organize your code. */
 p {
-    color: purple;
+    /*color: purple!important;*/
+    color: purple ;
+
 }
 
 /* "Cascading" means that the style sheet works like a waterfall, from the top down.  When we repeat the p selector, the bottom-most definition is what will be implemented.*/
