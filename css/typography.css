@@ -1,4 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto:wght@500&display=swap');
+
 body {
-    padding: 25%;
+    padding: 10%;
     font-size: 2rem; /*rem=Root Element M: browser's default sizing*/
+    color: purple;
+
+    font-weight: bolder;
+    font-style: italic;
+    font-style: oblique;
+    font-family: sarif;
+    font-family: sans-serif;
+    font-family: monospace;
+    font-family: cursive;
+    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: left;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+    letter-spacing: 0.1;
+    word-spacing: 0.75em;
+}
+
+a {
+    text-decoration: none; /*no underline, do something else to make links stand out*/
+    cursor: not-allowed;
+    cursor: pointer;
+    color: blue; /*default color before the link is clicked*/
+
+}
+
+a:visited { /*This is a pseudoclass*/
+    color: purple;
+}
+
+a:hover { /*This is a pseudoclass*/
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
