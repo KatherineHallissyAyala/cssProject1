@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto:wght@500&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol {
+    list-style-type: lower-alpha;
+    list-style-type:georgian;
+    list-style-type:decimal-leading-zero;
+    list-style-type:disc; /*this looks like an unordered bullet list*/
+    list-style-type:upper-roman;
+    list-style-type:none;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside; /*get bulelts to stay next to centered text*/
+    color: blue; /*changes text as well as bullets*/
+    line-height: 1.6;
+/*     list-style-image: url('../images/checkmark.png');
+have your own image in the project, to appear as the bullet*/
+/*     list-style: square url("../images/checkmark.png");
+ */}
+
+li { /*this would apply to all ordered and unordered list items*/
+    color: red;
+}
+
+li:nth-child(even) { /*this would apply to all ordered and unordered list items*/
+    color: yellow;
+}
+
+li:nth-child(3) { /*this would apply to all ordered and unordered list items*/
+    color: green;
+}
+
+::marker { /*changes the bullet color only, not text*/
+    color: #000;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5 >> "
+}

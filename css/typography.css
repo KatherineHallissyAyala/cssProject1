@@ -34,23 +34,3 @@ p {
     word-spacing: 0.75em;
 }
 
-a {
-    text-decoration: none; /*no underline, do something else to make links stand out*/
-    cursor: not-allowed;
-    cursor: pointer;
-    color: blue; /*default color before the link is clicked*/
-
-}
-
-a:visited { /*This is a pseudoclass*/
-    color: purple;
-}
-
-a:hover { /*This is a pseudoclass*/
-    color: green;
-}
-
-a:active {
-    color: red;
-}
-

@@ -1,0 +1,23 @@
+/* a stands for anchor
+ */
+a {
+    text-decoration: none; /*no underline, do something else to make links stand out*/
+    cursor: not-allowed;
+    cursor: pointer;
+    color: blue; /*default color before the link is clicked*/
+
+}
+
+a:visited { /*This is a pseudoclass*/
+    color: hsl(207, 44%, 49%);
+}
+
+a:hover, a:focus { /*This is a pseudoclass, puts an outline around the link, allows user to tab through the links > makes page accessible*/
+/*     color: green; */
+    color: hsl(197, 44%, 49%, 0.8); /*0.8 here is OPACITY*/
+    background: gold;
+}
+
+a:active {
+    color: red;
+}
