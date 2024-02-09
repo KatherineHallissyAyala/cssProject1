@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto:wght@500&display=swap');
+
+* { /* flush to the edges of the browser */
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: "roboto", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+   padding-left: 0.5rem;
+   text-align: right;
+   background-color: black;
+   margin: 0; 
+}
+
+li {
+    display: inline-block; /* put all list items on one line */
+    margin-inline: 0.5rem; /* put some space between list items */
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover, li a:focus {
+    text-decoration: underline;
+}

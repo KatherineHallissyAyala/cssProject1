@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto:wght@500&display=swap');
+
+body {
+    font-size: 2rem;
+    font-family: "roboto", sans-serif;
+}
+
+main {
+    background-color: aqua;
+    width: 50%;
+}
+
+p {
+    background-color: lightgray; /* block has 100% width by default.  (100% of what is available to them)*/
+    margin: 100px 50px;
+
+}
+
+.opposite {
+    display:inline-block; /*padding will be applied, but it's not overlapping other paragraphs*/
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100px; /*cannot apply to inline elemnt*/
+    height: 200px;
+    padding: 4rem;
+}
