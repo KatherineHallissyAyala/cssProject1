@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns {
+    column-count: 4;
+    column-width: 250px; /*May have 1 to 4 columns, depending on width of screen and window*/
+    columns: 4 250px;
+    column-rule: 3px solid #333;
+    column-gap: 4rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    break-inside: avoid;
+    break-before: column; /*not a great idea - forces the browser to break no matter what, even if the user makes the window very narrow.*/
+}
+
+.columns .quote {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+    margin-top: 2rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
