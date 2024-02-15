@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
@@ -61,4 +65,50 @@ body {
     background-color: black;
     position: sticky;
     top:  0;
+}
+
+section {
+    height: 100vh;
+
+}
+
+.blue {background-color: blue}
+.red {background-color: red}
+.green {background-color: green}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+
+}
+
+footer {
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    font-size: 3rem;
+}
+
+a:visited {
+    color: #fff;
+    background-color: royalblue;
+}
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
 }
