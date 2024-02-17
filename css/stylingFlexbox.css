@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    /*flex-wrap: wrap;*/
+    flex-flow: row nowrap; /* allows flex boxes to re-arrange and stay within container */
+    align-content: space-between;
+}
+
+.box {
+    min-width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 1 250px; /* 1st value: grow; 2nd value: shrink; 3rd value: basis */
+    /* flex-shrink: 1;  if items need to grow to fill page, they'll grow the same amount*/
+    /* flex-basis: 250px;  essentially min width*/
+
+}
+
+.box:nth-child(2){
+    flex-shrink: 2; /* changes growth ratio */
+    order: -1;
+}
