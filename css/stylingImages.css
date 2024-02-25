@@ -1,14 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@500&display=swap');
 
+/* Begni Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
 
+img {display: block}
+
+/* End Reset */ 
+
+
+/* Utility Classes */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+
+}
+
+/* Utility Classes */
+
+
 body {
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
+}
+
+.hero {
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgb(251, 210, 156);
+    background-image: url('../images/map-2176x1451.png');
+        /* always use an image that's twice as big as what you plan on displaying (in case it gets stretched on a larger device and would look blurry.  Though optimization is something to consider, too.  */
+    background-repeat: no-repeat; /* other parameters: repeat-y, repeat-x*/
+    background-size: cover; /*show more of image within the constraints*/
+        /*also use contain: fits the full image in, but doesn't make it cover the space */
+}
+
+.h1 {
+    font-size: 5rem;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000; /*x-axis, y-axis, blur */
+    background-color: hsla(0, 0%, 0%, 0.218);
+}
+
+.profile-pic-figure {
+    width: 35%;
+
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
 }
 
 .example {
@@ -18,7 +76,7 @@ body {
 
 }
 
-.example img {
-    width: 25%;
-    height: auto;
+.example img {  /* images are not block-level; they are actually inline*/
+    width: 25%; /* this makes it responsive! */
+    height: auto; /* auto keeps image in proportion */
 }
