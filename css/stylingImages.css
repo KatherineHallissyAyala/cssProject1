@@ -31,7 +31,24 @@ img {display: block}
 body {
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
+    background-color: aliceblue;
+    background-image:   url("../images/bubbles.png"),
+                        linear-gradient(to left, steelblue, white);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    background-size: 20%, auto; /* 20% applies to the image, auto applies to the gradient */
+    background: repeat-y right center url("../images/bubbles.png"), no-repeat linear-gradient(to left, steelblue, #fff);  /* this line combines the above background specs into one line */
 }
+
+.container {
+    background-color: rgb(251, 210, 156);
+    background-image: url('../images/map-2176x1451.png');
+        /* always use an image that's twice as big as what you plan on displaying (in case it gets stretched on a larger device and would look blurry.  Though optimization is something to consider, too.  */
+    background-repeat: no-repeat; /* other parameters: repeat-y, repeat-x*/
+    background-size: cover; /*show more of image within the constraints*/
+        /*also use contain: fits the full image in, but doesn't make it cover the space */
+    background-position: top;
+    }
 
 .hero {
     border-bottom: 2px solid #000;
@@ -41,12 +58,8 @@ body {
     align-items: center;
     gap: 30px;
 
-    background-color: rgb(251, 210, 156);
-    background-image: url('../images/map-2176x1451.png');
-        /* always use an image that's twice as big as what you plan on displaying (in case it gets stretched on a larger device and would look blurry.  Though optimization is something to consider, too.  */
-    background-repeat: no-repeat; /* other parameters: repeat-y, repeat-x*/
-    background-size: cover; /*show more of image within the constraints*/
-        /*also use contain: fits the full image in, but doesn't make it cover the space */
+    background-color: hsla(0, 0%, 0%, 0.218);
+
 }
 
 .h1 {
@@ -54,6 +67,9 @@ body {
     color: aliceblue;
     text-shadow: 2px 2px 5px #000; /*x-axis, y-axis, blur */
     background-color: hsla(0, 0%, 0%, 0.218);
+    padding: 0.25rem;
+    border-radius: 10px;
+
 }
 
 .profile-pic-figure {
@@ -80,3 +96,17 @@ body {
     width: 25%; /* this makes it responsive! */
     height: auto; /* auto keeps image in proportion */
 }
+
+.clip {
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("../images/scenic-2200x1331.png");
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text; /* use with and without webkit prefix for browser compatibility */
+    color: hsla(0, 0%, 0%, 0.253);
+    color: transparent; /* letters will be filled by image - looks cool! */
+}
+
